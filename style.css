@@ -128,7 +128,7 @@ active, .actove:hover{
     font-size: 2.5rem;
     border-radius: 30px;
     padding: 1%;
-    margin: 5%;
+    margin: 5% 0%;
     background: rgba(246, 246, 246, 0.102);
     backdrop-filter: saturate(180%) blur(50px);
 
