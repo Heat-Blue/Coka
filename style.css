@@ -20,32 +20,27 @@
 }
 
 body {
-    /* display: flex;
-    justify-content: center; */
-    /* align-items: center; */
     background-image: url('images/backgroundnight.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
     /* Adjust this value to match your header's height */
 }
 
 .navimg {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 7px;
+    width: 10vw
+
+
 }
+.logodiv {
+    padding-top: 1%;}
+
 nav {
     display: block;
 }
-main {
-    display: block;
-    
-    
-}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -56,8 +51,9 @@ main {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
-    min-height: 50px;
-    line-height: 10px;
+    min-height: 8vw;
+    max-height: 8vw;
+    line-height: 0px;
     background: rgba(57, 57, 57, 0.218);
     backdrop-filter: saturate(180%) blur(50px);
     z-index: 1030;
@@ -67,13 +63,13 @@ main {
     text-decoration: none;
     display: inline-block;
     border: 0px solid rgba(255, 255, 255, 0);
-    border-radius: 35px;
-    padding: 20px;
-    font-size: 30px;
+    border-radius: 20px;
+    padding: 2vw 2vh;
+    font-size: 2.5vw;
     color: hsl(0, 0%, 55%);
     background: black;
     backdrop-filter: blur(100px);
-    margin-top: 28px;
+    margin-top: 2vw;
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -101,33 +97,58 @@ active, .actove:hover{
 
 /* Additional styles for the body */
 
-
-.vote-counter{
-    margin-top: 250px;
-    display: block;
-    text-align: center;
-    font-size: 50px;
-    color: rgb(176, 176, 176);
-    
-}
-.totaltext {
+.counterdiv {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: rgb(197, 195, 195);
+    justify-content: center;
+}
+
+.counterdivnumber {
+    display: flex;
+    justify-content: center;
+}
+
+.totaltext {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(176, 176, 176);
     border-radius: 20px;
-    padding: 1%;
+    padding: 1vw 1vh;
     background: rgba(246, 246, 246, 0.102);
     backdrop-filter: saturate(180%) blur(50px);
-    
+    color: rgb(212, 212, 212);
+    font-size: 5vw;
+    width: 35vw;
 }
 
+#total-votes {
+    margin-top: 2%;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: rgb(176, 176, 176);
+    border-radius: 20px;
+    padding: 0vw 0vh;
+    background: rgba(246, 246, 246, 0.102);
+    backdrop-filter: saturate(180%) blur(50px);
+    color: rgb(212, 212, 212);
+    font-size: 5vw;
+    font-family: TAsteful;
+    width: 35vw;
+}
+
+.votefvtdiv {
+    display: flex;
+    justify-content: center;
+}
 .votefvt {
     text-align: center;
     color: rgb(197, 195, 195);
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     border-radius: 30px;
-    padding: 1%;
+    padding: 3vw;
     margin: 5% 0%;
     background: rgba(246, 246, 246, 0.102);
     backdrop-filter: saturate(180%) blur(50px);
@@ -136,13 +157,19 @@ active, .actove:hover{
 
 /* Voting Radio Buttons */
 
- 
+.cokefont{
+    color: azure;
+    font-family: LOKICOLA,sans-serif;
+}
+
+.pepsifont{
+    font-family: pepsi,sans-serif;
+    color: azure;
+}
 .voting-options{ 
     display: flex;
     flex-direction: row;
     justify-content:center;
-    
-
 }
 #pepsi {
     visibility: hidden;
@@ -150,40 +177,18 @@ active, .actove:hover{
 #coke {
     visibility: hidden;
 }
+
+
 .checkboxtext {
     border: 0px solid white;
-    height: 140px;
-    width: 300px;
-    margin: 30px;
+    margin: 5%;
     border-radius: 20px;
-    font-size: 40px;
+    font-size: 5vw;
     padding: 20px;
     text-align: center;
     background: rgba(246, 246, 246, 0.102);
     backdrop-filter: saturate(180%) blur(50px);
     cursor: pointer;
-}
-.fa-bottle-water {
-    font-size:7rem;
-    padding-top: 10px;
-    
- 
-}
-label>span{
-    font-size: 70px;
-    font-weight: 400;
-    color: rgb(225, 225, 200);
-    /* font-family: LOKICOLA,sans-serif; */
-    position: relative;
-    top: 0;
-    bottom: 0;
-}
-.cokefont{
-    font-family: LOKICOLA,sans-serif;
-}
-
-.pepsifont{
-    font-family: pepsi,sans-serif;
 }
 
 active, .checkboxtext:hover{
@@ -211,7 +216,7 @@ input[type="radio"]:checked + label{
 }
 .btn {
     font-family: TAsteful;
-    font-size: 5rem;
+    font-size: 7vw;
     background: rgba(246, 246, 246, 0.102);
     backdrop-filter: saturate(180%) blur(50px);
     border: none;
@@ -234,7 +239,7 @@ p{
     font-size: 3em;
 }
 
-@media (max-width: 832px){
+/* @media (max-width: 832px){
     .nav-link{
         font-size: 2em;
         padding: 10px;
@@ -255,4 +260,4 @@ p{
     }
 
     
-}
+} */

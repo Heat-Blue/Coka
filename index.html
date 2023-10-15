@@ -15,8 +15,8 @@
 <body>
     <header >
         <nav class="navbar">
-            <div class="navimg">
-                <a href=""><img src="images/L.png" alt="logo"> </a>
+            <div class="logodiv">
+                <a href=""><img src="images/L.png" alt="logo" class="navimg" > </a>
             </div>
 
             <div>
@@ -29,13 +29,20 @@
 
     
     <main>
-        <div class="vote-counter textalign">
-            <span class="totaltext">Total Votes: </span><span id="total-votes">0</span>
+        <div class="counterdiv">
+            <span class="totaltext">Total Votes: </span>
         </div>
 
-        <h1 class="textalign votefvt">Vote for Your Favorite:</h1>
+        <div class="counterdivnumber">
+            <span id="total-votes">0</span>
+        </div>
+
+        <div class="votefvtdiv">
+            <h1 class="votefvt">Vote for Your Favorite:</h1>
+        </div>
+
         <form id="vote-form">
-            <div class="voting-options textalign">
+            <div class="voting-options">
 
                
                     <input type="radio" name="vote" id="coke" value="coke">
