@@ -179,7 +179,6 @@ active, .actove:hover{
 
 
 .checkboxtext {
-    border: 0px solid white;
     margin: 5%;
     border-radius: 20px;
     font-size: 5vw;
@@ -191,10 +190,14 @@ active, .actove:hover{
 }
 
 active, .checkboxtext:hover{
-    padding: 20px;
+    .cokefont {
+        color: rgb(89, 20, 20);
+    }
+    .pepsifont {
+        color: rgb(19, 21, 143);
+    }
     background: rgb(150, 146, 146);
-    transition: .25s;
-    transition: .5s;
+    transition: 0.25s ;
     box-shadow: 5px 5px 20px 0px rgba(255, 255, 255, 0.704);
 
 
